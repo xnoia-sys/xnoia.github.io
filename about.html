@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>AboutX</title>
+		</head>
+
+			<body style="background: linear-gradient(to right, black, darkblue); color:white; ">
+				
+				<audio id="bgMusic" loop>
+    		<source src="background.mp3" type="audio/mpeg">
+		</audio>
+
+		<script>
+		const music = document.getElementById("bgMusic");
+
+				document.addEventListener("click", () => {
+   					music.play()
+        				.then(() => console.log("Playing"))
+        				.catch(err => console.error(err));
+		}, { once: true });
+		</script>
+				<h1 style="text-align:center; position:center; margin-top: 200px; font-size:90px;">About X.</h1>
+				<p style="text-align:center; position:center; color:blue; margin-top: 100px; font-size:50px;">Imong Mama Bluee</p>
+				<div style="
+					position:fixed;
+					bottom: 30px;
+					left: 30px
+				">
+					<h2><a href="index.html" style="color:white;">Index</a></h2>
+					<h2><a href="sectionb.html" style="color:white;">Don't click</a></h2>
+				</div>
+			</body>
+
+	
+	</html>
